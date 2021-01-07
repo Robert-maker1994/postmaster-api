@@ -1,7 +1,5 @@
 const express = require('express');
-const { connect } = require('mongoose');
 const config = require('./config/app');
-const client = require('@mailchimp/mailchimp_marketing');
 
 // DataBase Connection 
  require('./config/database');
