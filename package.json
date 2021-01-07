@@ -6,16 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "react-scripts build",
-    "server": "nodemon server",
-    "eject": "react-scripts eject",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "dev": "run dev server"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.27",
