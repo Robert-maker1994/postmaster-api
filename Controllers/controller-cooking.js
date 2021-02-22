@@ -15,7 +15,7 @@ exports.cooking  = async (req, res) => {
       const db = await client.db("dev").collection("postData"); 
       
       //Getting only Cooking posts
-       const food = await db.find({"blogCategory": "Food"}).sort({ name: 1}).toArray().then(cook => {
+       const food = await db.find({"category": "Food"}).sort({ name: 1}).toArray().then(cook => {
         cook.forEach(console.log);
         return cookingPosts = cook
             }).catch(err => console.error(`Failed to find cooking Posts: ${err}`));
