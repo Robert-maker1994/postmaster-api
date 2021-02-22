@@ -17,7 +17,7 @@ try {
           const db = await client.db("dev").collection("postData"); 
          
           //Getting only featured posts
-           const Endurance = await db.find({"blogCategory": "Endurance"}).sort({ name: 1}).toArray().then(sport => {
+           const Endurance = await db.find({"category": "Endurance"}).sort({ name: 1}).toArray().then(sport => {
             sport.forEach(console.log)
             return EndurancePosts = sport
                 }).catch(err => console.error(`Failed to find Endurance Posts: ${err}`));
